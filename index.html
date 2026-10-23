@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#080d18"><meta name="description" content="Десница. Защита темы магистерской ВКР Федосова Даниила Станиславовича: модель доверенной инфраструктуры верификации происхождения гуманитарного цифрового контента."><title>Десница — тема ВКР</title><link rel="icon" href="icon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css"></head>
+<body><a class="skip" href="#deck">Перейти к презентации</a><header class="topbar"><a class="brand" href="#1" aria-label="Десница — первый экран"><svg class="hand-mark" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 96" fill="none">
+  <g stroke="#fff" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M24.5 88.5 24 76.5C20.6 68.6 15.8 57.2 13.1 46.2c-2-8.2-2.7-14.7.8-18.3 1.1-1.2 2.6-2.1 4.1-2.8.2-5.6 2.5-10.4 6-13.7l2-6.3c.7-2.4 2.2-3.8 3.9-3.1 2.4.9 2.1 4.6 1.7 7.2l-1 7.5 3.7-9c.9-2.2 2.4-2.8 3.9-1.8 2.1 1.5 2.1 4.9 1.4 7.9l-3.1 12.3-.6 5.3c1.2 1.6 2.9 2 4 2.5-1.2 1.9-3.3 2.8-5 3.2l4.5 18.7c.8 3.2 3 2.9 3.7-.5l1.4-13.6c.6-5.3 3-8.7 6.4-9.7 2.1-.6 3.6-.2 2.3 2.5-2 4-1.6 6.7.2 10 2.5 4.6 1.2 8.3.5 12.6.3 8.7-3.8 15.4-9.2 21.6l-.4 11.1"/>
+    <path d="M30.6 16.7 27.3 28.5M18 25.1c4.8-1.1 10.5 4 17.9 6.3M14 28.1c4.5-1.5 10.7 1.1 17.8 6.8 2.5 2 4.4 2.4 7.1 1.2M12.1 35.3c4.1-1.6 9.4-.7 14.7 1.6l8.1.2"/>
+    <path d="M16.6 42.2c3.4 7.3 8.5 13 10.9 21.2 1.2 4.3 1.3 8.2.5 12.6M41.5 58.6c-5.7 4.8-8.2 10.3-8.9 16.8M25 79.1c5.4-1.5 12.1-1.9 19.6-.3M24.5 88.5c6.7-1.1 13.3-1.1 20-.2"/>
+  </g>
+</svg>
+<span>Десница</span></a></header><main id="deck" aria-label="Презентация из 15 экранов"><div class="stage"><section class="slide hero is-active" data-title="Тема исследования" aria-label="Экран 1. Тема исследования">
+ <div class="hero-copy"><div class="eyebrow">ТЕМА ВКР</div>
+ <h1>Модель доверенной инфраструктуры верификации происхождения и авторства гуманитарного цифрового контента в условиях распространения генеративного искусственного интеллекта</h1>
+ <div class="author"><span>Автор</span><p>Федосов Даниил Станиславович</p></div></div>
+ <div class="hero-visual"><canvas data-network="hero" aria-label="Визуализация сети связанных данных"></canvas></div>
+</section>
+
+<section class="slide" data-title="Проблема прослеживаемости" aria-label="Экран 2. Проблема прослеживаемости">
+ <div class="eyebrow">02 / АКТУАЛЬНОСТЬ</div><div class="slide-heading"><h2>Проблема прослеживаемости<br>при работе с генеративным ИИ</h2><span class="subtle-label">Условный пример</span></div>
+ <div class="problem-timeline">
+  <article><span class="step-id">01 / ИСТОЧНИК</span><div class="excerpt"><small>Краеведческая публикация · с. 12</small><p>«Школа открылась<br>в <b>1926</b> году»</p></div><h3>Исходное свидетельство</h3><p>Файл и библиографические сведения</p></article>
+  <article><span class="step-id">02 / ИЗВЛЕЧЕНИЕ LLM</span><div class="extraction-record"><span>Событие <b>Открытие школы</b></span><span>Год <b class="warning">1925</b></span><span>Ссылка <b class="muted">не сохранена</b></span></div><h3>Ошибка извлечения</h3><p>Утверждение требует сверки с источником</p></article>
+  <article><span class="step-id">03 / ПРАВКА ЧЕЛОВЕКА</span><div class="version-diff"><span>− <s>1925</s></span><span>+ 1926</span><small>Описание исправлено</small></div><h3>Новая редакция</h3><p>Происхождение изменения не связано с версией</p></article>
+ </div>
+ <div class="problem-gap"><span class="gap-mark">!</span><div><strong>Подтверждение: «проверено»</strong><p>Без идентификатора версии неизвестно, к какому тексту оно относится.</p></div><div class="gap-impact">Повторная сверка<br>и риск выбора неверной редакции</div></div>
+</section>
+
+<section class="slide" data-title="Совершенствование процесса" aria-label="Экран 3. Совершенствование процесса">
+ <div class="eyebrow">03 / AS-IS → TO-BE</div><div class="slide-heading"><h2>Совершенствование процесса проверки<br>и передачи исследовательского результата</h2></div>
+ <div class="process-comparison"><div class="process-row before"><div class="row-label">AS-IS<small>Раздельные записи</small></div><div class="process-node">Источник</div><div class="process-dash">···</div><div class="process-node">Ответ LLM</div><div class="process-dash">···</div><div class="process-node">Правка</div><div class="process-dash">···</div><div class="process-node">Согласование</div></div><div class="process-caption">Связи между материалами восстанавливаются при каждой повторной проверке</div>
+ <div class="process-row after"><div class="row-label">TO-BE<small>Связанные версии</small></div><div class="process-node">Источник<span>S1 · цитата · страница</span></div><div class="process-arrow">→</div><div class="process-node">Ответ LLM<span>V1 · модель · операция</span></div><div class="process-arrow">→</div><div class="process-node">Правка<span>V2 · автор изменения</span></div><div class="process-arrow">→</div><div class="process-node">Подтверждение<span>C1 → V2</span></div></div><div class="process-caption blue">Связи регистрируются при выполнении действий и передаются вместе с результатом</div></div>
+ <div class="measurement-band"><span>ОЦЕНИВАЕМЫЙ ЭФФЕКТ</span><strong>Время повторной проверки</strong><strong>Ошибки выбора версии</strong><small>Величина эффекта определяется экспериментально</small></div>
+</section>
+
+<section class="slide" data-title="Анализ предметной области" aria-label="Экран 4. Анализ предметной области">
+ <div class="eyebrow">04 / ПРЕДВАРИТЕЛЬНЫЙ ОБЗОР</div><div class="slide-heading"><h2>Подходы к обработке материалов<br>и описанию их происхождения</h2></div>
+ <div class="review-table"><div class="review-head"><span>ПОДХОД</span><span>ИСПОЛЬЗУЕМЫЙ ПРИНЦИП</span><span>ЗНАЧЕНИЕ ДЛЯ ИССЛЕДОВАНИЯ</span></div>
+ <a href="https://www.transkribus.org/metadata" target="_blank" rel="noopener"><strong>Transkribus <i>↗</i></strong><span>Разметка и извлечение сведений</span><span>Связь извлечения с исходным материалом</span></a>
+ <a href="https://omeka.org/s/docs/user-manual/content/items/" target="_blank" rel="noopener"><strong>Omeka S <i>↗</i></strong><span>Метаданные и связи цифровых объектов</span><span>Описание источников и коллекций</span></a>
+ <a href="https://www.w3.org/TR/prov-primer/" target="_blank" rel="noopener"><strong>W3C PROV <i>↗</i></strong><span>Сущность · деятельность · агент</span><span>Формализация происхождения результата</span></a>
+ <a href="https://spec.c2pa.org/specifications/specifications/2.2/explainer/Explainer.html" target="_blank" rel="noopener"><strong>C2PA <i>↗</i></strong><span>Подписанные сведения о происхождении</span><span>Связь истории с конкретным материалом</span></a></div>
+ <div class="research-focus"><span>ФОКУС ВКР</span><p>Версия результата <i>→</i> основание в источнике <i>→</i> подтверждение человека <i>→</i> независимая сверка</p></div>
+</section>
+
+<section class="slide" data-title="Объект, предмет и цель" aria-label="Экран 5. Объект, предмет и цель">
+ <div class="eyebrow">05 / ИССЛЕДОВАТЕЛЬСКАЯ ПОСТАНОВКА</div><div class="slide-heading"><h2>Объект, предмет и цель исследования</h2></div>
+ <div class="research-definition"><div class="definition-code">01<span>ОБЪЕКТ</span></div><div><h3>Процесс работы с гуманитарным цифровым контентом</h3><p>Подготовка, проверка и передача материалов с участием генеративного ИИ.</p></div></div>
+ <div class="research-definition"><div class="definition-code">02<span>ПРЕДМЕТ</span></div><div><h3>Модели связей и процедуры верификации</h3><p>Источники, версии, сведения об авторстве, операции ИИ и подтверждения человека.</p></div></div>
+ <div class="research-definition goal-definition"><div class="definition-code">03<span>ЦЕЛЬ</span></div><div><h3>Разработать и экспериментально оценить<br>модель доверенной инфраструктуры</h3><p>Снижение трудозатрат и ошибок при проверке происхождения<br>с сохранением прослеживаемости и независимой сверки версий.</p></div></div>
+ <div class="research-axes"><span>Процесс</span><i>→</i><span>Модель и процедуры</span><i>→</i><span>Измеряемый результат</span></div>
+</section>
+
+<section class="slide" data-title="Задачи и гипотеза" aria-label="Экран 6. Задачи и гипотеза">
+ <div class="eyebrow">06 / ЛОГИКА ИССЛЕДОВАНИЯ</div><div class="slide-heading"><h2>Задачи исследования<br>и проверяемая гипотеза</h2></div>
+ <div class="task-line"><div><b>01</b><h3>Описать<br>процесс</h3></div><div><b>02</b><h3>Сравнить<br>подходы</h3></div><div><b>03</b><h3>Спроектировать<br>модель</h3></div><div><b>04</b><h3>Определить<br>процедуры</h3></div><div><b>05</b><h3>Реализовать<br>прототип</h3></div><div><b>06</b><h3>Провести<br>эксперименты</h3></div></div>
+ <div class="hypothesis"><span>ГИПОТЕЗА</span><p>Явная связь результата с источником, цитатой и подтверждением версии<br>сокращает время повторной проверки и число ошибок.</p><div><strong>Одна и та же LLM</strong><i>·</i><strong>Сопоставимое качество результата</strong><i>·</i><strong>Экспериментальная проверка</strong></div></div>
+</section>
+
+<section class="slide demo-slide" data-title="Сценарий работы с материалом" aria-label="Экран 7. Сценарий работы с материалом">
+ <div class="eyebrow">07 / ПРОЕКТИРУЕМЫЙ ИНТЕРФЕЙС <span class="subtle-label">Макет · условные данные</span></div><div class="slide-heading compact"><h2>Извлечение, проверка и подтверждение версии</h2></div>
+ <div class="product-window" id="product-demo" data-phase="0">
+  <div class="product-top"><div class="mini-brand"><svg class="hand-mark" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 96" fill="none">
+  <g stroke="#fff" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M24.5 88.5 24 76.5C20.6 68.6 15.8 57.2 13.1 46.2c-2-8.2-2.7-14.7.8-18.3 1.1-1.2 2.6-2.1 4.1-2.8.2-5.6 2.5-10.4 6-13.7l2-6.3c.7-2.4 2.2-3.8 3.9-3.1 2.4.9 2.1 4.6 1.7 7.2l-1 7.5 3.7-9c.9-2.2 2.4-2.8 3.9-1.8 2.1 1.5 2.1 4.9 1.4 7.9l-3.1 12.3-.6 5.3c1.2 1.6 2.9 2 4 2.5-1.2 1.9-3.3 2.8-5 3.2l4.5 18.7c.8 3.2 3 2.9 3.7-.5l1.4-13.6c.6-5.3 3-8.7 6.4-9.7 2.1-.6 3.6-.2 2.3 2.5-2 4-1.6 6.7.2 10 2.5 4.6 1.2 8.3.5 12.6.3 8.7-3.8 15.4-9.2 21.6l-.4 11.1"/>
+    <path d="M30.6 16.7 27.3 28.5M18 25.1c4.8-1.1 10.5 4 17.9 6.3M14 28.1c4.5-1.5 10.7 1.1 17.8 6.8 2.5 2 4.4 2.4 7.1 1.2M12.1 35.3c4.1-1.6 9.4-.7 14.7 1.6l8.1.2"/>
+    <path d="M16.6 42.2c3.4 7.3 8.5 13 10.9 21.2 1.2 4.3 1.3 8.2.5 12.6M41.5 58.6c-5.7 4.8-8.2 10.3-8.9 16.8M25 79.1c5.4-1.5 12.1-1.9 19.6-.3M24.5 88.5c6.7-1.1 13.3-1.1 20-.2"/>
+  </g>
+</svg>
+<strong>Десница</strong></div><div class="breadcrumbs">Коллекция / Краеведческие материалы <span>/ 004</span></div><span class="document-mode">Проверка извлечения</span></div>
+  <div class="product-body">
+   <div class="source-pane"><div class="pane-title"><span>01 &nbsp; ИСТОЧНИК</span><span>S1 · страница 12</span></div><div class="source-layout"><aside class="page-rail"><span>10</span><span>11</span><span class="selected">12</span><span>13</span><span>14</span></aside><div class="archive-page"><div class="archive-head">КРАЕВЕДЧЕСКИЕ ЗАПИСКИ</div><h3>Из истории городской школы</h3><div class="archive-rule"></div><p>Новый этап в истории образования связан с открытием школы.</p><p class="source-quote">«Школа открылась<br>в <mark>1926 году</mark>».</p><p class="archive-continuation">Этот факт отмечен в описании общественной жизни города.</p><div class="page-number">12</div></div></div></div>
+   <div class="extraction-pane"><div class="pane-title"><span>02 &nbsp; ИЗВЛЕЧЕНИЕ</span><span>Событие / дата</span></div><div class="demo-status" id="demo-status"><i></i><span>Источник зарегистрирован</span></div><div class="extract-field"><label>СОБЫТИЕ</label><p>Открытие городской школы</p></div><div class="extract-field date-field"><label>ГОД</label><div><span class="empty-date">—</span><span class="ai-date">1925</span><span class="human-date">1926</span><span class="edit-label">правка человека</span></div></div><div class="citation-link"><span>ОСНОВАНИЕ</span><p>«Школа открылась в 1926 году»</p><small>Публикация № 004 · с. 12 ↗</small></div><div class="reviewer-row"><span>Ответственный за проверку</span><strong>Исследователь</strong></div><button class="confirm-demo" type="button">Подтвердить версию V2 <span>✓</span></button><div class="confirmed-line">V2 · источник S1 · цитата · подтверждение C1</div><div class="demo-cursor" aria-hidden="true"><svg viewBox="0 0 24 30"><path d="M2 1 L2 24 L8 18 L14 28 L18 26 L12 16 L22 16 Z"/></svg></div></div>
+   <aside class="history-pane"><div class="pane-title">03 &nbsp; ИСТОРИЯ</div><div class="history-entry source-entry"><i></i><b>S1</b><span>Источник</span><small>Оригинал сохранён</small></div><div class="history-entry model-entry"><i></i><b>V1</b><span>Предложение LLM</span><small>Первоначальный ответ</small></div><div class="history-entry human-entry"><i></i><b>V2</b><span>Правка человека</span><small>1925 → 1926</small></div><div class="history-entry confirm-entry"><i></i><b>C1</b><span>Подтверждение V2</span><small>Относится к этой версии</small></div><div class="history-footer">История сохраняет<br>первоначальный ответ модели</div></aside>
+  </div><div class="demo-steps" aria-label="Этапы демонстрации"><button data-demo-step="0">01 Источник</button><button data-demo-step="1">02 Ответ LLM</button><button data-demo-step="2">03 Сверка цитаты</button><button data-demo-step="3">04 Правка</button><button data-demo-step="4">05 Подтверждение</button><button id="replay-demo" aria-label="Повторить демонстрацию">↺</button></div>
+ </div>
+</section>
+
+<section class="slide " data-title="Модель происхождения и подтверждения версии" aria-label="Экран 8. Модель происхождения и подтверждения версии"><div class="eyebrow">08 / МОДЕЛЬ ДАННЫХ</div><div class="slide-heading compact"><h2>Модель происхождения и подтверждения версии</h2></div><div class="t-figure t-provenance">
+<svg viewBox="0 0 1400 510" role="img" aria-labelledby="t-prov-title t-prov-desc">
+ <title id="t-prov-title">Модель происхождения и подтверждения версии</title><desc id="t-prov-desc">Источник S1 используется при извлечении A1. Модель M1 выполняет извлечение, создающее версию V1. Человек P1 выполняет проверку и редактирование A2, создающие V2. Запись C1 подтверждает именно V2. Версии сохраняют ссылку на страницу источника. Загрузка источника не доказывает авторство.</desc>
+ <defs><marker id="t-p-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0 10 5 0 10Z" fill="#759fff"/></marker><marker id="t-p-dim" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0 10 5 0 10Z" fill="#788ba9"/></marker></defs>
+ <g class="t-agent"><rect x="265" y="10" width="225" height="64" rx="6"/><text x="285" y="37" class="t-meta">M1 · ИСПОЛНИТЕЛЬ</text><text x="285" y="61">Локальная LLM</text><rect x="795" y="10" width="225" height="64" rx="6"/><text x="815" y="37" class="t-meta">P1 · ИСПОЛНИТЕЛЬ</text><text x="815" y="61">Исследователь</text></g>
+ <path class="t-dashed" d="M377 74V148 M907 74V148" marker-end="url(#t-p-dim)"/><text x="394" y="117" class="t-edge-label">выполняет</text><text x="924" y="117" class="t-edge-label">выполняет</text>
+ <g class="t-entity"><rect x="0" y="155" width="220" height="115" rx="7"/><text x="22" y="184" class="t-meta">S1 · ИСТОЧНИК</text><text x="22" y="218" class="t-title">Оригинал</text><text x="22" y="247" class="t-secondary">Скан + метаданные</text></g>
+ <g class="t-activity"><rect x="275" y="155" width="205" height="115" rx="24"/><text x="295" y="184" class="t-meta">A1 · ДЕЙСТВИЕ</text><text x="295" y="218" class="t-title">Извлечение</text><text x="295" y="247" class="t-secondary">Запрос + модель</text></g>
+ <g class="t-entity"><rect x="535" y="155" width="205" height="115" rx="7"/><text x="555" y="184" class="t-meta">V1 · ВЕРСИЯ</text><text x="555" y="218" class="t-title">Ответ ИИ</text><text x="555" y="247" class="t-secondary">Исходный ответ</text></g>
+ <g class="t-activity"><rect x="795" y="155" width="225" height="115" rx="24"/><text x="815" y="184" class="t-meta">A2 · ДЕЙСТВИЕ</text><text x="815" y="218" class="t-title">Проверка</text><text x="815" y="247" class="t-secondary">Правка человека</text></g>
+ <g class="t-entity t-accent"><rect x="1075" y="155" width="325" height="115" rx="7"/><text x="1097" y="184" class="t-meta">V2 · ВЕРСИЯ</text><text x="1097" y="218" class="t-title">Проверенный текст</text><text x="1097" y="247" class="t-secondary">Автор правки: P1</text></g>
+ <g class="t-flow" marker-end="url(#t-p-arrow)"><path d="M220 213H272"/><path d="M480 213H532"/><path d="M740 213H792"/><path d="M1020 213H1072"/></g><g class="t-flow-label"><text x="247" y="198">вход</text><text x="507" y="198">выход</text><text x="767" y="198">вход</text><text x="1047" y="198">выход</text></g>
+ <path class="t-dashed" d="M1120 270V311H110V273" marker-end="url(#t-p-dim)"/><text x="475" y="338" class="t-edge-label">Ссылка на S1: цитата + страница + версия источника</text>
+ <g class="t-entity"><rect x="1075" y="372" width="325" height="94" rx="7"/><text x="1097" y="402" class="t-meta">C1 · ПОДТВЕРЖДЕНИЕ</text><text x="1097" y="436" class="t-title">P1 → конкретная V2</text></g><path class="t-flow" d="M1300 372V273" marker-end="url(#t-p-arrow)"/><text x="1280" y="334" text-anchor="end" class="t-edge-label">подтверждает</text>
+ <path class="t-divider" d="M0 372H1015"/><text x="0" y="407" class="t-secondary">Сведения об авторе источника сохраняются вместе с основанием атрибуции.</text><text x="0" y="439" class="t-secondary">Факт загрузки не устанавливает авторство. Каждая правка образует новую версию.</text>
+ <text x="0" y="496" class="t-caption">Операционная схема: сущности, действия и исполнители разделены по логике W3C PROV.</text>
+</svg></div>
+</section>
+<section class="slide " data-title="Архитектура экспериментального прототипа" aria-label="Экран 9. Архитектура экспериментального прототипа"><div class="eyebrow">09 / АРХИТЕКТУРА</div><div class="slide-heading compact"><h2>Архитектура экспериментального прототипа</h2></div><div class="t-figure t-architecture">
+<svg viewBox="0 0 1400 510" role="img" aria-labelledby="t-arch-title t-arch-desc">
+ <title id="t-arch-title">Предлагаемая архитектура доверенной инфраструктуры</title><desc id="t-arch-desc">Ручные операции и подтверждения через API поступают в детерминированное ядро. Локальная LLM работает отдельной аналитической ветвью, возвращая предложение без права записи. Ядро сохраняет версии и формирует канонический манифест. Отдельный сервис возвращает ядру подпись. Метаданные операции и сообщение outbox сохраняются одной транзакцией. Сообщение доставляется в отдельно управляемый реестр; повтор и неизвестный исход обрабатываются по идентификатору операции. Независимый проверяющий сверяет полученный от владельца пакет с известной опорной записью.</desc>
+ <defs><marker id="t-a-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0 10 5 0 10Z" fill="#759fff"/></marker><marker id="t-a-dim" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0 10 5 0 10Z" fill="#788ba9"/></marker></defs>
+ <rect class="t-boundary" x="0" y="28" width="1050" height="450" rx="10"/><text x="20" y="17" class="t-domain-label">КОНТУР ОРГАНИЗАЦИИ</text><text x="1110" y="17" class="t-domain-label">ОТДЕЛЬНОЕ УПРАВЛЕНИЕ</text>
+ <g class="t-component" data-arch=""><rect x="20" y="200" width="210" height="120" rx="7"/><text x="40" y="228" class="t-meta">ДОСТУП</text><text x="40" y="260" class="t-title">API + права</text><text x="40" y="288" class="t-secondary">Правки и</text><text x="40" y="311" class="t-secondary">подтверждения</text></g>
+ <g class="t-component t-accent" data-arch=""><rect x="360" y="200" width="330" height="120" rx="7"/><text x="382" y="228" class="t-meta">ПРИНЯТИЕ И ФИКСАЦИЯ</text><text x="382" y="260" class="t-title">Ядро регистрации</text><text x="382" y="288" class="t-secondary">Проверка правил</text><text x="382" y="311" class="t-secondary">Канонический манифест</text></g>
+ <path class="t-flow" d="M230 260H357" marker-end="url(#t-a-arrow)"/><text x="295" y="245" text-anchor="middle" class="t-edge-label">операция</text>
+ <g class="t-component" data-arch=""><rect x="360" y="55" width="330" height="90" rx="7"/><text x="382" y="92" class="t-title">Локальная LLM</text><text x="382" y="123" class="t-secondary">Предложение, без права записи</text></g>
+ <path class="t-flow" d="M525 148V197" marker-start="url(#t-a-arrow)" marker-end="url(#t-a-arrow)"/><text x="544" y="178" class="t-edge-label">задание / ответ</text>
+ <g class="t-component" data-arch=""><rect x="795" y="200" width="230" height="120" rx="7"/><text x="815" y="228" class="t-meta">ИЗОЛЯЦИЯ КЛЮЧЕЙ</text><text x="815" y="260" class="t-title">Сервис подписи</text><text x="815" y="289" class="t-secondary">Подпись манифеста</text></g>
+ <path class="t-flow" d="M690 246H792" marker-end="url(#t-a-arrow)"/><text x="742" y="232" text-anchor="middle" class="t-edge-label">запрос</text><path class="t-flow" d="M795 291H693" marker-end="url(#t-a-arrow)"/><text x="742" y="317" text-anchor="middle" class="t-edge-label">подпись</text>
+ <g class="t-storage"><path d="M20 391Q20 376 145 376Q270 376 270 391V451Q270 466 145 466Q20 466 20 451Z"/><path d="M20 391Q20 406 145 406Q270 406 270 391"/><text x="42" y="430" class="t-title">Файлы и версии</text><text x="42" y="455" class="t-secondary">Оригиналы / производные</text></g>
+ <path class="t-flow" d="M273 420H315V305H357" marker-start="url(#t-a-arrow)" marker-end="url(#t-a-arrow)"/><text x="296" y="351" text-anchor="end" class="t-edge-label">чтение / запись</text>
+ <g class="t-component" data-arch=""><rect x="360" y="380" width="665" height="86" rx="7"/><path class="t-divider" d="M740 395V451"/><text x="382" y="416" class="t-title">Метаданные + события</text><text x="382" y="447" class="t-secondary">Версии, связи, статусы операций</text><text x="766" y="416" class="t-title">Durable outbox</text><text x="766" y="447" class="t-secondary">Operation ID + отпечаток</text></g>
+ <path class="t-flow" d="M525 323V377" marker-end="url(#t-a-arrow)"/><text x="545" y="360" class="t-edge-label">одна транзакция БД</text>
+ <g class="t-component t-external" data-arch=""><rect x="1130" y="80" width="270" height="110" rx="7"/><text x="1150" y="108" class="t-meta">ОПОРА ДЛЯ СВЕРКИ</text><text x="1150" y="142" class="t-title">Независимый реестр</text><text x="1150" y="173" class="t-secondary">Хеш манифеста</text></g>
+ <path class="t-flow" d="M1025 421H1090V135H1127" marker-end="url(#t-a-arrow)"/>
+ <g class="t-component t-external"><rect x="1130" y="356" width="270" height="110" rx="7"/><text x="1150" y="386" class="t-meta">ПРОВЕРЯЮЩИЙ</text><text x="1150" y="421" class="t-title">Сверка пакета</text><text x="1150" y="450" class="t-secondary">Файл + манифест + опора</text></g>
+ <path class="t-flow" d="M1265 190V353" marker-end="url(#t-a-arrow)"/><text x="1246" y="256" text-anchor="end" class="t-edge-label">известная</text><text x="1246" y="280" text-anchor="end" class="t-edge-label">доверенная опора</text>
+ <text x="0" y="505" class="t-caption">Повтор доставки — без логического дубля. При неизвестном исходе — сверка статуса, затем решение о повторе.</text><text x="1130" y="505" class="t-caption">Пакет — от владельца.</text>
+</svg></div>
+</section>
+<section class="slide integrity-slide" data-title="Протокол проверки целостности" aria-label="Экран 10. Протокол проверки целостности"><div class="eyebrow">10 / НЕЗАВИСИМАЯ ВЕРИФИКАЦИЯ</div><div class="slide-heading compact"><h2>Протокол проверки целостности</h2></div><div class="t-integrity">
+ <div class="t-integrity-left">
+  <div class="t-kicker">ДЕМОНСТРАЦИЯ · SHA-256 СОДЕРЖИМОГО</div>
+  <div class="t-sample">Школа открылась в <span id="integrity-year">1926</span> году</div>
+  <div class="t-hash-row"><div class="t-hash"><small>Предъявленный файл</small><code id="current-hash">Вычисление…</code></div><span id="hash-symbol">=</span><div class="t-hash"><small>Зафиксированная версия</small><code id="anchor-hash">Вычисление…</code></div></div>
+  <div id="integrity-result" class="integrity-result"><span>✓</span><div>Версия совпадает<small>Сверка с известной опорной записью</small></div></div>
+  <div class="scenario-controls" aria-label="Сценарий проверки целостности"><button data-integrity="auto" class="selected">Автопоказ</button><button data-integrity="valid">Исходный файл</button><button data-integrity="tampered">Изменить дату</button><button data-integrity="offline">Нет доступа к опоре</button></div>
+ </div>
+ <div class="t-integrity-right">
+  <div class="t-kicker">ПРОЕКТИРУЕМАЯ ПРОЦЕДУРА ПРОВЕРКИ ПАКЕТА</div>
+  <div class="t-checks">
+   <div class="t-check"><b>01</b><div><strong>Опорная запись → манифест</strong><p>Хеш манифеста сопоставляется с известной доверенной записью.</p></div></div>
+   <div class="t-check"><b>02</b><div><strong>Манифест → файл и связи</strong><p>Проверяются хеши файла, источника и записи подтверждения.</p></div></div>
+   <div class="t-check"><b>03</b><div><strong>Подпись → полномочия</strong><p>Проверяются подпись, доверие к ключу и право подтвердить эту версию.</p></div></div>
+  </div>
+  <div class="t-model-note">Слева вычисляется реальный SHA-256 учебного текста. Подписи и сеть в этой презентации не исполняются.</div>
+ </div>
+</div><div class="t-verification-note">Целостность версии, подтверждение человека и актуальность — разные результаты проверки.</div>
+</section>
+<section class="slide experiment-slide" data-title="Пользовательский эксперимент" aria-label="Экран 11. Пользовательский эксперимент">
+ <div class="eyebrow">11 / МЕТОДОЛОГИЯ <span class="subtle-label">План эксперимента</span></div><div class="slide-heading"><h2>Оценка влияния системы<br>на трудозатраты и качество проверки</h2></div>
+ <div class="experiment-grid"><div class="cohort"><span class="cohort-letter">А</span><h3>Базовый<br>процесс</h3><p>Источник и редактор</p><small>Ручное восстановление оснований</small></div><div class="cohort"><span class="cohort-letter">Б</span><h3>Базовый процесс<br>с LLM</h3><p>Те же инструменты + модель</p><small>Оценка вклада автоматического извлечения</small></div><div class="cohort featured"><span class="cohort-letter">В</span><h3>Та же LLM<br>в «Деснице»</h3><p>Цитаты, версии, подтверждения</p><small>Оценка вклада связанной истории</small></div><div class="corpus"><strong>30–50</strong><p>документов</p><small>Предварительный объём.<br>Уточняется после пилота.</small><div class="corpus-dots" aria-hidden="true"></div></div></div>
+ <div class="experiment-contrasts"><span>А ↔ Б <b>Вклад LLM</b></span><span>Б ↔ В <b>Вклад инфраструктуры</b></span><small>Сопоставимые задания · чередование порядка</small></div>
+ <div class="measurement-row"><span>МЕТРИКИ</span><div>Время проверки</div><div>Ошибки извлечения</div><div>Точность цитат</div><div>Выбор верной версии</div></div>
+</section>
+
+<section class="slide registry-slide" data-title="Сравнение механизмов фиксации" aria-label="Экран 12. Сравнение механизмов фиксации">
+ <div class="eyebrow">12 / ТЕХНИЧЕСКИЙ ЭКСПЕРИМЕНТ <span class="subtle-label">План испытаний</span></div><div class="slide-heading"><h2>Сравнение вариантов хранения<br>проверочной записи</h2></div>
+ <div class="registry-protocol"><div class="protocol-input"><span>ОБЩИЕ ВХОДНЫЕ ДАННЫЕ</span><strong>Один пакет<br>и набор воздействий</strong><small>Файл · паспорт · связи · подтверждение</small></div><div class="protocol-bracket" aria-hidden="true"></div><div class="registry-variants"><div><b>I</b><strong>Локальный журнал</strong><span>Одна административная зона</span></div><div><b>II</b><strong>Журнал + независимая отметка</strong><span>Отдельный держатель контрольной записи</span></div><div><b>III</b><strong>Блокчейн-фиксация</strong><span>Независимые участники сети</span></div></div><div class="protocol-bracket reverse" aria-hidden="true"></div><div class="protocol-output"><span>ЕДИНАЯ МЕТОДИКА</span><strong>Сопоставление<br>наблюдаемых результатов</strong><small>Обнаружение · ложные тревоги<br>статусы · задержка · затраты</small></div></div>
+ <div class="test-conveyor"><span>СЦЕНАРИИ ВОЗДЕЙСТВИЯ</span><div class="test-chips"><button data-test="0">Подмена файла</button><button data-test="1">Изменение паспорта</button><button data-test="2">Чужое подтверждение</button><button data-test="3">Старая версия</button><button data-test="4">Повтор / сбой</button></div><div id="test-explanation">Изменённые байты предъявляются под идентификатором прежней версии.</div></div>
+ <div class="footnote">Модель угроз: изменение локальной истории администратором при сохранности независимой опоры.</div>
+</section>
+
+<section class="slide significance-slide" data-title="Значимость и вклад" aria-label="Экран 13. Значимость и вклад">
+ <div class="eyebrow">13 / ЗНАЧИМОСТЬ И ЛИЧНЫЙ ВКЛАД</div><div class="slide-heading"><h2>Связь теоретической модели<br>с практической проверкой</h2></div>
+ <div class="contribution-flow"><article><span>01 / МОДЕЛЬ</span><h3>Связи и ограничения</h3><p>Источник, версия, авторство,<br>операция, подтверждение</p></article><i>→</i><article><span>02 / ПРОЦЕДУРЫ</span><h3>Регистрация и сверка</h3><p>Правила формирования<br>и проверки пакета</p></article><i>→</i><article><span>03 / ПРОТОТИП</span><h3>Реализация модели</h3><p>Один воспроизводимый<br>сценарий обработки</p></article><i>→</i><article><span>04 / ОЦЕНКА</span><h3>Условия применимости</h3><p>Трудозатраты, ошибки,<br>надёжность и ограничения</p></article></div>
+ <div class="significance-braces"><div><span>ТЕОРЕТИЧЕСКАЯ ЗНАЧИМОСТЬ</span><h3>Формализация проверяемого происхождения</h3><p>Разделение утверждений об авторстве, целостности<br>и корректности извлечения.</p></div><div><span>ПРАКТИЧЕСКАЯ ЗНАЧИМОСТЬ</span><h3>Воспроизводимая передача результата</h3><p>Материал передаётся вместе с источником,<br>историей подготовки и основаниями проверки.</p></div></div>
+ <div class="footnote">Научная новизна уточняется по итогам обзора и экспериментальной оценки.</div>
+</section>
+
+<section class="slide final-slide" data-title="Планируемые результаты" aria-label="Экран 14. Планируемые результаты">
+ <div class="eyebrow">14 / РЕЗУЛЬТАТЫ ВКР</div><div class="slide-heading"><h2>Планируемые результаты исследования</h2></div>
+ <div class="results-table"><div><span>01</span><h3>Модель доверенной инфраструктуры</h3><p>Схема данных, связи и правила проверки происхождения</p></div><div><span>02</span><h3>Экспериментальный прототип</h3><p>Обработка одной коллекции и одного вида извлечения</p></div><div><span>03</span><h3>Сравнительная оценка</h3><p>Эффект для пользователя, затраты и границы применимости</p></div></div>
+ <div class="final-scope"><span>ГРАНИЦЫ РАБОТЫ</span><p>Печатные гуманитарные материалы · локальная LLM · проверка человеком</p></div><div class="closing-line"><span>Федосов Даниил Станиславович</span></div>
+</section>
+
+<section class="slide ecosystem-slide" data-title="Контекст развития: экосистема Ладья" aria-label="Экран 15. Контекст развития: экосистема Ладья"><div class="eyebrow">15 / ДОПОЛНЕНИЕ <span class="subtle-label">Проектная логическая модель</span></div><div class="slide-heading compact"><h2>Ладья: архитектура мультиагентной экосистемы</h2></div><div class="em-shell e-figure"><svg id="ecosystem-map" class="ecosystem-map" viewBox="0 0 1800 730" role="img" aria-labelledby="em-title em-desc"><title id="em-title">Ладья — проектная логическая архитектура мультиагентной экосистемы</title><desc id="em-desc">Карта отражает управляющий контур и оркестратор Лад, внутренний навигатор Квест, универсальное и исследовательское ядра Гонца, метод Квант, цикл четырёх логических ролей, доказательную базу, составной допуск в базу знаний и решение человека. Десница — узкий модуль верификации происхождения в составе допуска, наряду с содержательной проверкой экспертом. CORE и интеграции представлены общими сервисами. Сплошные стрелки передают материалы, пунктирные — задачи и решения; линии без стрелок обозначают общие возможности. Функциональные блоки не означают количество развёрнутых сервисов.</desc><defs><pattern id="em-grid" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r=".6" fill="#7086a2" opacity=".16"/></pattern>
+<marker id="em-data-arrow" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0 8 4 0 8" fill="#7fa4cb"/></marker>
+<marker id="em-control-arrow" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0 8 4 0 8" fill="#a8bad0"/></marker>
+<marker id="em-return-arrow" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0 8 4 0 8" fill="#8e91aa"/></marker>
+</defs><rect width="1800" height="730" fill="url(#em-grid)"/>
+<g class="em-governance"><rect x="260" y="0" width="1540" height="99" rx="5"/><text x="278" y="25" class="em-code" >УПРАВЛЯЮЩИЙ КОНТУР</text><text x="1780" y="25" class="em-muted" text-anchor="end">Сквозные правила и ограничения</text></g>
+<g class="em-policy"><rect x="278" y="39" width="287" height="24" rx="2"/><text x="288" y="57" class="em-policy-text" >Правила и принципы</text></g>
+<g class="em-policy"><rect x="579" y="39" width="287" height="24" rx="2"/><text x="589" y="57" class="em-policy-text" >Целостность / происхождение</text></g>
+<g class="em-policy"><rect x="880" y="39" width="287" height="24" rx="2"/><text x="890" y="57" class="em-policy-text" >Конфликты и неизвестное</text></g>
+<g class="em-policy"><rect x="1181" y="39" width="287" height="24" rx="2"/><text x="1191" y="57" class="em-policy-text" >Восстановление состояния</text></g>
+<g class="em-policy"><rect x="1482" y="39" width="287" height="24" rx="2"/><text x="1492" y="57" class="em-policy-text" >Решения принципала</text></g>
+<g class="em-policy"><rect x="278" y="67" width="287" height="24" rx="2"/><text x="288" y="85" class="em-policy-text" >Цикл завершения</text></g>
+<g class="em-policy"><rect x="579" y="67" width="287" height="24" rx="2"/><text x="589" y="85" class="em-policy-text" >Критерии допуска</text></g>
+<g class="em-policy"><rect x="880" y="67" width="287" height="24" rx="2"/><text x="890" y="85" class="em-policy-text" >Контроль качества</text></g>
+<g class="em-policy"><rect x="1181" y="67" width="287" height="24" rx="2"/><text x="1191" y="85" class="em-policy-text" >Аудит и полномочия</text></g>
+<g class="em-policy"><rect x="1482" y="67" width="287" height="24" rx="2"/><text x="1492" y="85" class="em-policy-text" >Остановка цикла</text></g>
+<g class="em-node em-human"><rect x="0" y="0" width="220" height="99" rx="3"/><text x="12" y="23" class="em-node-title" >Человек</text><text x="12" y="44" class="em-sub" >Принципал</text></g>
+<text x="12" y="79" class="em-sub" >Задачи · решения</text>
+<path class="em-edge em-control" d="M110 99V114H280V126" marker-end="url(#em-control-arrow)"/>
+<text x="123" y="111" class="em-edge-label" >задача</text>
+<path class="em-edge em-data" d="M1530 167H1545V108H204V99" marker-end="url(#em-data-arrow)"/>
+<text x="1100" y="120" class="em-edge-label" >отчёт → человеку</text>
+<path class="em-edge em-control" d="M1040 99V126" marker-end="url(#em-control-arrow)"/>
+<g class="em-panel "><rect x="260" y="126" width="1270" height="97" rx="5"/><text x="277" y="152" class="em-code" >01 / КООРДИНАЦИЯ</text><text x="277" y="181" class="em-panel-title" >ЛАД</text></g>
+<text x="1512" y="152" class="em-muted" text-anchor="end">Единый план · назначение исполнителей · сбор результата</text>
+<g class="em-function"><rect x="277" y="182" width="164" height="28" rx="2"/><text x="288" y="202" class="em-function-text" >Приём задачи</text></g>
+<g class="em-function"><rect x="453" y="182" width="164" height="28" rx="2"/><text x="464" y="202" class="em-function-text" >Контекст</text></g>
+<g class="em-function"><rect x="629" y="182" width="164" height="28" rx="2"/><text x="640" y="202" class="em-function-text" >План работ</text></g>
+<g class="em-function"><rect x="805" y="182" width="164" height="28" rx="2"/><text x="816" y="202" class="em-function-text" >Подзадачи</text></g>
+<g class="em-function"><rect x="981" y="182" width="164" height="28" rx="2"/><text x="992" y="202" class="em-function-text" >Маршрутизация</text></g>
+<g class="em-function"><rect x="1157" y="182" width="164" height="28" rx="2"/><text x="1168" y="202" class="em-function-text" >Сбор результата</text></g>
+<g class="em-function"><rect x="1333" y="182" width="164" height="28" rx="2"/><text x="1344" y="202" class="em-function-text" >Отчёт</text></g>
+<g class="em-panel "><rect x="0" y="252" width="220" height="345" rx="5"/><text x="17" y="278" class="em-code" >00 / СРЕДЫ И ДАННЫЕ</text><text x="17" y="307" class="em-panel-title" >Источники</text></g>
+<g class="em-node em-source"><rect x="12" y="319" width="196" height="49" rx="3"/><text x="24" y="342" class="em-node-title" >Документы</text><text x="24" y="363" class="em-sub" >PDF · сканы · таблицы</text></g>
+<g class="em-node em-source"><rect x="12" y="372" width="196" height="49" rx="3"/><text x="24" y="395" class="em-node-title" >Данные</text><text x="24" y="416" class="em-sub" >1С · ERP · CRM · SQL</text></g>
+<g class="em-node em-source"><rect x="12" y="425" width="196" height="49" rx="3"/><text x="24" y="448" class="em-node-title" >Веб-источники</text><text x="24" y="469" class="em-sub" >Реестры · СМИ · сайты</text></g>
+<g class="em-node em-source"><rect x="12" y="478" width="196" height="49" rx="3"/><text x="24" y="501" class="em-node-title" >Люди</text><text x="24" y="522" class="em-sub" >Эксперты · сотрудники</text></g>
+<g class="em-node em-source"><rect x="12" y="531" width="196" height="49" rx="3"/><text x="24" y="554" class="em-node-title" >Сервисы</text><text x="24" y="575" class="em-sub" >Почта · файлы · облака</text></g>
+<g class="em-panel "><rect x="270" y="252" width="300" height="345" rx="5"/><text x="287" y="278" class="em-code" >02 / ВНУТРЕННИЙ КОНТУР</text><text x="287" y="307" class="em-panel-title" >КВЕСТ</text></g>
+<g class="em-node "><rect x="286" y="321" width="268" height="53" rx="3"/><text x="298" y="344" class="em-node-title" >Навигация</text><text x="298" y="365" class="em-sub" >Структура проектов</text></g>
+<g class="em-node "><rect x="286" y="381" width="268" height="53" rx="3"/><text x="298" y="404" class="em-node-title" >Поиск документов</text><text x="298" y="425" class="em-sub" >Договоры · инструкции</text></g>
+<g class="em-node "><rect x="286" y="441" width="268" height="53" rx="3"/><text x="298" y="464" class="em-node-title" >Внутренний контекст</text><text x="298" y="485" class="em-sub" >Связи и рабочие материалы</text></g>
+<g class="em-node "><rect x="286" y="501" width="268" height="53" rx="3"/><text x="298" y="524" class="em-node-title" >Корпоративная память</text><text x="298" y="545" class="em-sub" >Сведения организации</text></g>
+<text x="286" y="579" class="em-sub" >Внутренний навигатор / секретарь</text>
+<g class="em-agent-boundary"><rect x="600" y="252" width="930" height="345" rx="6"/><text x="618" y="279" class="em-agent-title" >ГОНЕЦ</text><text x="1512" y="279" class="em-muted" text-anchor="end">Исследовательско-навигационный AI-агент</text></g>
+<g class="em-inner-panel"><rect x="615" y="299" width="411" height="282" rx="3"/><rect x="1045" y="299" width="470" height="282" rx="3"/></g>
+<text x="630" y="324" class="em-inner-title" >03 / УНИВЕРСАЛЬНОЕ ЯДРО</text>
+<g class="em-node em-capability"><rect x="628" y="341" width="122" height="59" rx="3"/><text x="640" y="364" class="em-node-title" >Задача</text><text x="640" y="385" class="em-sub" >Цель · ограничения</text></g>
+<g class="em-node em-capability"><rect x="760" y="341" width="122" height="59" rx="3"/><text x="772" y="364" class="em-node-title" >Планирование</text><text x="772" y="385" class="em-sub" >Этапы · приоритеты</text></g>
+<g class="em-node em-capability"><rect x="892" y="341" width="122" height="59" rx="3"/><text x="904" y="364" class="em-node-title" >Навигация</text><text x="904" y="385" class="em-sub" >Состояние проекта</text></g>
+<g class="em-node em-capability"><rect x="628" y="410" width="122" height="59" rx="3"/><text x="640" y="433" class="em-node-title" >Информация</text><text x="640" y="454" class="em-sub" >Извлечение данных</text></g>
+<g class="em-node em-capability"><rect x="760" y="410" width="122" height="59" rx="3"/><text x="772" y="433" class="em-node-title" >Аналитика</text><text x="772" y="454" class="em-sub" >Логика · гипотезы</text></g>
+<g class="em-node em-capability"><rect x="892" y="410" width="122" height="59" rx="3"/><text x="904" y="433" class="em-node-title" >Память решений</text><text x="904" y="454" class="em-sub" >Журнал · контекст</text></g>
+<g class="em-node em-capability"><rect x="628" y="479" width="122" height="59" rx="3"/><text x="640" y="502" class="em-node-title" >Методология</text><text x="640" y="523" class="em-sub" >Знания · шаблоны</text></g>
+<g class="em-node em-capability"><rect x="760" y="479" width="122" height="59" rx="3"/><text x="772" y="502" class="em-node-title" >Взаимодействие</text><text x="772" y="523" class="em-sub" >Диалог · уточнения</text></g>
+<g class="em-node em-capability"><rect x="892" y="479" width="122" height="59" rx="3"/><text x="904" y="502" class="em-node-title" >Качество</text><text x="904" y="523" class="em-sub" >Валидация</text></g>
+<text x="630" y="566" class="em-sub" >Набор функций общего назначения</text>
+<text x="1060" y="324" class="em-inner-title" >04 / ИССЛЕДОВАТЕЛЬСКОЕ ЯДРО</text>
+<g class="em-step"><rect x="1060" y="346" width="101" height="42" rx="3"/><text x="1069" y="361" class="em-step-number" >01</text><text x="1069" y="379" class="em-step-title" >Постановка</text></g>
+<g class="em-step"><rect x="1173" y="346" width="101" height="42" rx="3"/><text x="1182" y="361" class="em-step-number" >02</text><text x="1182" y="379" class="em-step-title" >План</text></g>
+<g class="em-step"><rect x="1286" y="346" width="101" height="42" rx="3"/><text x="1295" y="361" class="em-step-number" >03</text><text x="1295" y="379" class="em-step-title" >Поиск</text></g>
+<g class="em-step"><rect x="1399" y="346" width="101" height="42" rx="3"/><text x="1408" y="361" class="em-step-number" >04</text><text x="1408" y="379" class="em-step-title" >Проверка</text></g>
+<g class="em-step"><rect x="1399" y="406" width="101" height="42" rx="3"/><text x="1408" y="421" class="em-step-number" >05</text><text x="1408" y="439" class="em-step-title" >Утверждения</text></g>
+<g class="em-step"><rect x="1286" y="406" width="101" height="42" rx="3"/><text x="1295" y="421" class="em-step-number" >06</text><text x="1295" y="439" class="em-step-title" >Синтез</text></g>
+<g class="em-step"><rect x="1173" y="406" width="101" height="42" rx="3"/><text x="1182" y="421" class="em-step-number" >07</text><text x="1182" y="439" class="em-step-title" >Отчёт</text></g>
+<path class="em-edge em-data" d="M1161 367H1170" marker-end="url(#em-data-arrow)"/>
+<path class="em-edge em-data" d="M1274 367H1283" marker-end="url(#em-data-arrow)"/>
+<path class="em-edge em-data" d="M1387 367H1396" marker-end="url(#em-data-arrow)"/>
+<path class="em-edge em-data" d="M1449 388V403" marker-end="url(#em-data-arrow)"/>
+<path class="em-edge em-data" d="M1399 427H1390" marker-end="url(#em-data-arrow)"/>
+<path class="em-edge em-data" d="M1286 427H1277" marker-end="url(#em-data-arrow)"/>
+<g class="em-method"><rect x="1060" y="406" width="101" height="42" rx="3"/><text x="1070" y="424" class="em-step-title" >КВАНТ</text><text x="1070" y="440" class="em-method-caption" >Метод / skill</text></g>
+<text x="1060" y="477" class="em-code-small" >ЛОГИЧЕСКИЕ РОЛИ ПРОВЕРКИ</text>
+<g class="em-role"><rect x="1060" y="490" width="101" height="31" rx="2"/><text x="1110" y="510" class="em-role-text" text-anchor="middle">Архитектор</text></g>
+<path class="em-edge em-control" d="M1161 505H1170" marker-end="url(#em-control-arrow)"/>
+<g class="em-role"><rect x="1173" y="490" width="101" height="31" rx="2"/><text x="1223" y="510" class="em-role-text" text-anchor="middle">Исследователь</text></g>
+<path class="em-edge em-control" d="M1274 505H1283" marker-end="url(#em-control-arrow)"/>
+<g class="em-role"><rect x="1286" y="490" width="101" height="31" rx="2"/><text x="1336" y="510" class="em-role-text" text-anchor="middle">Критик</text></g>
+<path class="em-edge em-control" d="M1387 505H1396" marker-end="url(#em-control-arrow)"/>
+<g class="em-role"><rect x="1399" y="490" width="101" height="31" rx="2"/><text x="1449" y="510" class="em-role-text" text-anchor="middle">Арбитр</text></g>
+<path class="em-edge em-return" d="M1450 521V539H1110V524" marker-end="url(#em-return-arrow)"/>
+<text x="1280" y="558" class="em-cycle-label" text-anchor="middle">Проверка → исправление → повторная проверка</text>
+<path class="em-edge em-control" d="M420 223V249" marker-end="url(#em-control-arrow)"/>
+<path class="em-edge em-control" d="M850 223V249" marker-end="url(#em-control-arrow)"/>
+<path class="em-edge em-data" d="M570 291H585V235H1350V223" marker-end="url(#em-data-arrow)"/>
+<path class="em-edge em-data" d="M1260 252V223" marker-end="url(#em-data-arrow)"/>
+<path class="em-edge em-data" d="M1026 390H1042" marker-end="url(#em-data-arrow)"/>
+<path class="em-edge em-data" d="M1045 430H1029" marker-end="url(#em-data-arrow)"/>
+<path class="em-edge em-data" d="M220 350H267" marker-end="url(#em-data-arrow)"/>
+<text x="223" y="338" class="em-edge-label" >внутр.</text>
+<path class="em-edge em-data" d="M220 560H242V609H590V391H612" marker-end="url(#em-data-arrow)"/>
+<text x="300" y="622" class="em-edge-label" >внешние источники</text>
+<g class="em-panel "><rect x="1560" y="252" width="240" height="345" rx="5"/><text x="1577" y="278" class="em-code" >05 / РЕЗУЛЬТАТЫ</text><text x="1577" y="307" class="em-panel-title" >Знания и решения</text></g>
+<g class="em-node em-evidence"><rect x="1574" y="319" width="212" height="51" rx="3"/><text x="1586" y="342" class="em-node-title" >Доказательная база</text><text x="1586" y="363" class="em-sub" >Источники · утверждения</text></g>
+<g class="em-gate"><rect x="1574" y="390" width="212" height="107" rx="4"/><text x="1587" y="412" class="em-gate-title" >Допуск в базу знаний</text><text x="1587" y="438" class="em-expert" >Эксперт: содержание</text><text x="1587" y="453" class="em-expert" >и качество вывода</text></g>
+<g class="em-desnitsa"><rect x="1587" y="461" width="186" height="27" rx="3"/><text x="1597" y="480" class="em-desnitsa-title" >Десница</text><text x="1765" y="479" class="em-desnitsa-sub" text-anchor="end">происхождение</text></g>
+<g class="em-node em-knowledge"><rect x="1574" y="519" width="212" height="30" rx="3"/><text x="1586" y="541" class="em-node-title" >База знаний CORE</text></g>
+<g class="em-node em-decision"><rect x="1574" y="569" width="212" height="28" rx="3"/><text x="1586" y="590" class="em-node-title" >Решение принципала</text></g>
+<path class="em-edge em-data" d="M1680 370V387" marker-end="url(#em-data-arrow)"/>
+<path class="em-edge em-data" d="M1680 497V516" marker-end="url(#em-data-arrow)"/>
+<path class="em-edge em-data" d="M1680 549V566" marker-end="url(#em-data-arrow)"/>
+<path class="em-edge em-data" d="M1224 448V457H1539V344H1571" marker-end="url(#em-data-arrow)"/>
+<path class="em-edge em-control" d="M1574 410H1549V614H1034V455H1045" marker-end="url(#em-control-arrow)"/>
+<text x="1285" y="628" class="em-edge-label" >на доработку при непрохождении критериев</text>
+<g class="em-adapters"><rect x="270" y="645" width="1260" height="36" rx="3"/><text x="286" y="668" class="em-code-small" >ИНТЕГРАЦИИ</text></g>
+<text x="480" y="668" class="em-adapter-text" >Источники и БД</text>
+<text x="685" y="668" class="em-adapter-text" >API / плагины</text>
+<path class="em-divider" d="M670 654V674"/>
+<text x="890" y="668" class="em-adapter-text" >Рабочие инструменты</text>
+<path class="em-divider" d="M875 654V674"/>
+<text x="1095" y="668" class="em-adapter-text" >Коммуникации</text>
+<path class="em-divider" d="M1080 654V674"/>
+<text x="1300" y="668" class="em-adapter-text" >Среда исполнения</text>
+<path class="em-divider" d="M1285 654V674"/>
+<path class="em-edge em-shared" d="M420 597V636H900V645" />
+<path class="em-edge em-shared" d="M850 597V636" />
+<path class="em-edge em-shared" d="M1475 597V636H900" />
+<g class="em-core"><rect x="0" y="695" width="1800" height="35" rx="3"/><text x="16" y="719" class="em-core-title" >ЛАДЬЯ / CORE</text></g>
+<text x="258" y="718" class="em-core-service" >Правила и методология</text>
+<text x="511" y="718" class="em-core-service" >Роли и права</text>
+<text x="764" y="718" class="em-core-service" >Память и база знаний</text>
+<text x="1017" y="718" class="em-core-service" >Аудит и восстановление</text>
+<text x="1270" y="718" class="em-core-service" >Маршрутизация</text>
+<text x="1523" y="718" class="em-core-service" >Безопасность</text>
+<path class="em-edge em-shared" d="M900 681V695" />
+<path class="em-edge em-shared" d="M1680 597V695" />
+</svg></div><div class="em-map-toolbar"><div class="em-legend"><span><i class="em-legend-data"></i>Данные / результат</span><span><i class="em-legend-control"></i>Задача / управление</span><span><i class="em-legend-shared"></i>Общий сервис</span></div><button id="map-open" type="button" aria-haspopup="dialog">Развернуть карту <span aria-hidden="true">↗</span></button></div><div class="ecosystem-foot"><span>Десница — модуль проверки происхождения и целостности материалов</span><small>Границы ВКР: модель и прототип этого модуля</small></div></section></div></main><footer class="controlbar"><div class="slide-counter"><strong id="current-slide">01</strong><span>/ 15</span></div><nav id="progress-nav" aria-label="Перейти к экрану"></nav><div class="control-actions"><span class="elapsed" id="elapsed" title="Время с первого перехода">00:00</span><button id="notes-toggle" title="Текст выступления (N)" aria-label="Открыть текст выступления">≡</button><button id="overview-toggle" title="Все экраны (O)" aria-label="Обзор всех экранов">▦</button><button id="motion-toggle" title="Остановить анимации (P)" aria-label="Пауза анимаций">Ⅱ</button><button id="autoplay-toggle" title="Автопереход по хронометражу" aria-label="Включить автопереход экранов">▷</button><button id="fullscreen-toggle" title="Полный экран (F)" aria-label="Полноэкранный режим">⛶</button><span class="control-divider"></span><button id="prev" aria-label="Предыдущий экран">←</button><button id="next" class="next-control" aria-label="Следующий экран">→</button></div></footer>
+<div class="keyboard-hint" id="keyboard-hint"><kbd>→</kbd> / <kbd>пробел</kbd> — следующий экран <span>Анимации запускаются автоматически</span></div>
+<aside id="notes-panel" hidden aria-label="Текст выступления"><div class="panel-header"><span>ТЕКСТ ВЫСТУПЛЕНИЯ</span><button id="notes-close" aria-label="Закрыть текст">×</button></div><h2 id="notes-title"></h2><div id="notes-duration"></div><div id="notes-content"></div><p class="notes-foot">N — скрыть · → — следующий экран</p></aside>
+<div id="overview" hidden role="dialog" aria-modal="true" aria-label="Все экраны"><div class="overview-head"><span>ДЕСНИЦА / СТРУКТУРА ВЫСТУПЛЕНИЯ</span><button id="overview-close" aria-label="Закрыть обзор">×</button></div><div id="overview-grid"></div><p>14 основных экранов + дополнение · около 10 минут · Esc — вернуться</p></div>
+<div class="live-announcement" aria-live="polite" id="announcement"></div>
+<script src="speech.js"></script><script src="visuals.js"></script><script src="architecture-map.js"></script><script src="app.js"></script></body></html>
